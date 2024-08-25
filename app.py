@@ -9,7 +9,7 @@ def load_objects():
     scaler = None
     train_columns = None
     try:
-        model = joblib.load('random_forest_model.h5')
+        model = joblib.load('random_forest_model.pkl')
         scaler = joblib.load('scaler.pkl')
         train_columns = joblib.load('train_columns.pkl')
     except FileNotFoundError as e:
