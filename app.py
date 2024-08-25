@@ -1,4 +1,6 @@
-import joblib
+import tensorflow as tf
+from tensorflow.keras.models import load_model
 
-model = joblib.load('random_forest_model.h5')
+model = load_model('random_forest_model.h5')
+
 print(model.predict([[0, 0, 5, 0, 0, 0, 0]]))  # Use a dummy input
